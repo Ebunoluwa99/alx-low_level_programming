@@ -1,24 +1,23 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * main - print _putchar
- *
- * Description: prints _putchar
- *
- * Return: Always 0 (succesful)
+ * main - prints holberton
+ * Return: Always (0)
  */
-
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+	char c[] = "_putchar";
+	int length, i;
 
-return (0);
+	length = strlen(c);
+
+	for (i = 0; i < length; i++)
+	{
+		_putchar(c[i]);
+	}
+
+	_putchar('\n');
+
+	return (0);
 }
